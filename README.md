@@ -1,1 +1,1 @@
-Sample TODO App with vuejs and mongodb
+Sample CRM App with vuejs and mongodb
