@@ -4,23 +4,23 @@
       <h2> Create Customer </h2>
       <form id="create-post-form" @submit.prevent="createCustomer">
         <div class="form-group col-md-12">
-          <label for="title"> First Name </label>
-          <input type="text" id="first_name" v-model="first_name" name="title" class="form-control" placeholder="Enter firstname">
+          <label for="first_name"> First Name </label>
+          <input type="text" id="first_name" v-model="first_name" name="title" class="form-control" placeholder="Enter first name">
         </div>
         <div class="form-group col-md-12">
-          <label for="title"> Last Name </label>
+          <label for="last_name"> Last Name </label>
           <input type="text" id="last_name" v-model="last_name" name="title" class="form-control" placeholder="Enter Last name">
         </div>
         <div class="form-group col-md-12">
-          <label for="title"> Email </label>
+          <label for="email"> Email </label>
           <input type="text" id="email" v-model="email" name="title" class="form-control" placeholder="Enter email">
         </div>
         <div class="form-group col-md-12">
-          <label for="title"> Phone </label>
+          <label for="phone_number"> Phone </label>
           <input type="text" id="phone_number" v-model="phone" name="title" class="form-control" placeholder="Enter Phone number">
         </div>
         <div class="form-group col-md-12">
-          <label for="title"> Address </label>
+          <label for="address"> Address </label>
           <input type="text" id="address" v-model="address" name="title" class="form-control" placeholder="Enter Address">
         </div>
         <div class="form-group col-md-12">
@@ -29,15 +29,17 @@
         </div>
         <div class="form-group col-md-4 pull-right">
           <button class="btn btn-success" type="submit"> Create Customer </button>
-        </div>           </form>
+        </div>
+      </form>
     </div>
   </div>
 </template>
 
 <script>
 import axios from "axios";
-import { server } from "../../helper";
+import {server} from "@/helper";
 import router from "../../router";
+
 export default {
   data() {
     return {

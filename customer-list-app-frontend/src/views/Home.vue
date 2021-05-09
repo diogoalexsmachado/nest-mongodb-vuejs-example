@@ -44,7 +44,7 @@
   </div>
 </template>
 <script>
-import {server} from "../helper";
+import {server} from "@/helper";
 import axios from "axios";
 
 export default {

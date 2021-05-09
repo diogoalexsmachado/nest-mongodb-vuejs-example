@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <h4 class="text-center mt-20">
@@ -10,23 +9,23 @@
       <h2> Edit Customer </h2>
       <form id="create-post-form" @submit.prevent="editCustomer">
         <div class="form-group col-md-12">
-          <label for="title"> First Name </label>
-          <input type="text" id="first_name" v-model="customer.first_name" name="title" class="form-control" placeholder="Enter firstname">
+          <label for="first_name"> First Name </label>
+          <input type="text" id="first_name" v-model="customer.first_name" name="title" class="form-control" placeholder="Enter first name">
         </div>
         <div class="form-group col-md-12">
-          <label for="title"> Last Name </label>
+          <label for="last_name"> Last Name </label>
           <input type="text" id="last_name" v-model="customer.last_name" name="title" class="form-control" placeholder="Enter Last name">
         </div>
         <div class="form-group col-md-12">
-          <label for="title"> Email </label>
+          <label for="email"> Email </label>
           <input type="text" id="email" v-model="customer.email" name="title" class="form-control" placeholder="Enter email">
         </div>
         <div class="form-group col-md-12">
-          <label for="title"> Phone </label>
+          <label for="phone_number"> Phone </label>
           <input type="text" id="phone_number" v-model="customer.phone" name="title" class="form-control" placeholder="Enter Phone number">
         </div>
         <div class="form-group col-md-12">
-          <label for="title"> Address </label>
+          <label for="address"> Address </label>
           <input type="text" id="address" v-model="customer.address" name="title" class="form-control" placeholder="Enter Address">
         </div>
         <div class="form-group col-md-12">
@@ -40,9 +39,10 @@
   </div>
 </template>
 <script>
-import { server } from "../../helper";
+import {server} from "@/helper";
 import axios from "axios";
 import router from "../../router";
+
 export default {
   data() {
     return {
